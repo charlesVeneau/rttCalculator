@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculette RTT</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <caption>Calculette RTT (ne fonctionne que sur une même année calendaire)</caption>
+            <tr>
+                <th><label for="debut">Date de début</label></th>
+                <th><input id="debut" type="date" value="2017-01-01" required></th>
+            </tr>
+            <tr>
+                <th><label for="fin">Date de fin</label></th>
+                <th><input id="fin" type="date" value="2017-12-31" required></th>
+            </tr>
+            <tr>
+                <th><label for="joursTravailles">Nombre de jours travaillés</label></th>
+                <th><input id="joursTravailles" type="number" value="218" required></th>
+            </tr>
+            <tr>
+                <th><label for="congesPayes">Nombre de congés payés</label></th>
+                <th><input id="congesPayes" type="number" value="25" required></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><input type="submit" value="Calculer" id="calculer" ></th>
+            </tr>
+            <tr>
+                <th>Nombre de jours ouvrés</th>
+                <th id="resultJoursOuvr"></th>
+            </tr>
+            <tr>
+                <th>Nombre de jours travaillés</th>
+                <th id="resultJoursTrav"></th>
+            </tr>
+            <tr>
+                <th>Nombre de congés payés</th>
+                <th id="resultCongesPayes"></th>
+            </tr>
+            <tr>
+                <th>Nombre de RTT</th>
+                <th id="resultRTT"></th>
+            </tr>
+        </table>
+    </form>
+    <p>Code source : <a href="#">Github</a></p>    
+    <script type="text/javascript" src="src/calculette.js"></script>
+</body>
+</html>
